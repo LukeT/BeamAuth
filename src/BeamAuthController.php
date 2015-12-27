@@ -81,7 +81,7 @@ class BeamAuthController implements ControllerInterface
         $id = $owner->toArray()['id'];
         return $this->authenticate( 
             ['beam_id' => $owner->toArray()['id']],
-            ['email' => $owner->toArray()['email']]
+            // ['email' => $owner->toArray()['email']]
         );
     }
 }
